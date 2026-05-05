@@ -1,0 +1,25 @@
+{
+    "workbench.colorTheme": "Red",
+    "files.autoSave": "afterDelay",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "git.enableSmartCommit": true,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "git.autofetch": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "git.confirmSync": false,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "javascript"
+    },
+    "terminal.integrated.initialHint": false,
+    "workbench.preferredDarkColorTheme": "Red",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Red"
+}
