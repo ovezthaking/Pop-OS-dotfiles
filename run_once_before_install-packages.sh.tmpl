@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -e
+
+ROOT="$HOME/.local/share/chezmoi/scripts"
+
+bash "$ROOT/base.sh"
+bash "$ROOT/shell.sh"
+bash "$ROOT/node.sh"
+bash "$ROOT/rust.sh"
+bash "$ROOT/python.sh"
+bash "$ROOT/docker.sh"
+bash "$ROOT/vscode.sh"
+
+echo "FULL SETUP COMPLETE"
