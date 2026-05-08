@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting docker node python rust)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting docker node python rust fzf-tab)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,10 +108,29 @@ eval "$(pyenv init -)"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# exa i zoxide robione
+# eza i zoxide, starship robione
 eval "$(zoxide init zsh)"
-alias ls="exa --icons"
-alias cat="batcat"
+alias cd="z"
+
+eval "$(starship init zsh)"
+
+source <(fzf --zsh)
+
+alias ls="eza --icons"
+
+if command -v batcat >/dev/null 2>&1; then
+    alias cat="batcat"
+else
+    alias cat="bat"
+fi
+
+
+HISTSIZE=100000
+SAVEHIST=100000
+
+setopt HIST_IGNORE_ALL_DUPS
+setopt SHARE_HISTORY
+setopt HIST_FIND_NO_DUPS
 
 
 export NVM_DIR="$HOME/.nvm"
