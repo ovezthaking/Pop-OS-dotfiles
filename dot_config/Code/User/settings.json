@@ -21,5 +21,6 @@
     "terminal.integrated.initialHint": false,
     "workbench.preferredDarkColorTheme": "Red",
     "window.autoDetectColorScheme": true,
-    "workbench.preferredLightColorTheme": "Red"
+    "workbench.preferredLightColorTheme": "Red",
+    "git.addAICoAuthor": "off"
 }
