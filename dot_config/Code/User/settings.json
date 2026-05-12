@@ -22,5 +22,7 @@
     "workbench.preferredDarkColorTheme": "Red",
     "window.autoDetectColorScheme": true,
     "workbench.preferredLightColorTheme": "Red",
-    "git.addAICoAuthor": "off"
+    "git.addAICoAuthor": "off",
+    "terminal.integrated.fontFamily": "'MesloLGS Nerd Font Mono'",
+    "terminal.integrated.smoothScrolling": true
 }
