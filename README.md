@@ -1,1 +1,1 @@
-System preconfiguration - quick shell and app rollback 
+System preconfiguration - quick shell and apps rollback 
